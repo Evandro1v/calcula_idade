@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+main {
+  min-width: 300px;
+  background-color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px 25px 100px 25px;
+  height: 90%;
+}
+
+form {
+  width: 90%;
+}
+
+.container-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-input {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b3b3b3;
+  letter-spacing: 3px;
+}
+
+input {
+  border: 1px solid #c5bebe;
+  width: 85px;
+  height: 50px;
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 20px;
+
+}
+
+input:hover {
+  border: 1px solid #874cff;
+
+
+}
+
+#span1,
+#span2,
+#span3 {
+  color: red;
+  font-size: 10px;
+  letter-spacing: 0;
+
+}
+
+.container-linha {
+  position: relative;
+  border-bottom: 2px solid #c5bebe;
+  width: 100%;
+  margin-top: 60px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-image: url(/assets/images/icon-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  height: 70px;
+  width: 70px;
+  background-color: #874cff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  background-color: black;
+
+}
+
+img {
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+
+}
+
+section {
+  flex-direction: column;
+  width: 90%;
+  display: flex;
+  margin-top: 70px;
+}
+
+section div {
+  height: 60px;
+  border-collapse: collapse;
+  display: flex;
+  align-items: center;
+}
+
+.p1 {
+
+  font-size: 55px;
+  font-weight: 800;
+  font-style: italic;
+  color: #874cff;
+}
+
+.p2 {
+  margin-left: 10px;
+  font-weight: 800;
+  font-size: 55px;
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  main {
+    height: 450px;
+    width: 600px;
+  }
+
+  input {
+    width: 100px;
+  }
+
+
+  .container-inputs {
+    justify-content: flex-start;
+  }
+
+  .container-linha {
+    width: 95%;
+    margin-top: 30px;
+  }
+
+  button {
+    left: 95%;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+
+  .p1 {
+
+    font-size: 65px;
+
+  }
+
+  .p2 {
+    font-size: 70px;
+
+  }
+}

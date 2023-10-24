@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Overpass:wght@500&family=Poppins:wght@400;500;600;700;800&family=Rubik:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form onsubmit="return validateForm(this)">
+      <div class="container-inputs">
+        <div class="container-input">
+          <span id="day1">DAY</span>
+          <input type="number" placeholder="DD" required id="day-id">
+          <span id="span1">ㅤ </span>
+        </div>
+        <div class="container-input">
+          <span id="month1">MONTH</span>
+          <input type="number" placeholder="MM" required id="month-id">
+          <span id="span2">ㅤ </span>
+
+        </div>
+        <div class="container-input">
+          <span id="year1">YEAR</span>
+          <input type="number" placeholder="YYYY" required id="year-id">
+          <span id="span3">ㅤ </span>
+
+        </div>
+      </div>
+      <div class="container-linha">
+        <button></button>
+
+      </div>
+    </form>
+    <section>
+
+      <span id="naonasceu-id"></span>
+      <div>
+        <p class="p1" id="P1-id">--</p>
+        <p class="p2">years</p>
+      </div>
+      <div>
+        <p class="p1" id="P2-id">--</p>
+        <p class="p2">months</p>
+      </div>
+      <div>
+        <p class="p1" id="P3-id">--</p>
+        <p class="p2">days</p>
+      </div>
+
+      <section>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Evandro1v">Evandro1v</a>.
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
